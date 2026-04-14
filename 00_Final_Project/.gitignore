@@ -1,0 +1,24 @@
+# Secrets — never commit these
+terraform/terraform.tfvars
+.env
+*.json
+
+# Terraform state
+terraform/.terraform/
+terraform/.terraform.lock.hcl
+terraform/terraform.tfstate
+terraform/terraform.tfstate.backup
+
+# dbt
+dbt/faers_analytics/target/
+dbt/faers_analytics/dbt_packages/
+dbt/faers_analytics/logs/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Data files
+*.zip
+*.txt.gz
